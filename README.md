@@ -15,5 +15,5 @@ Uninstall:
 irm https://raw.githubusercontent.com/lx50ak-source/sync-tool-releases/main/uninstall.ps1 | iex
 ```
 
-After installing on both PCs: right-click the tray icon on each → "اقتران جهاز جديد…" →
-confirm the same 6-digit code on both.
+After installing on both PCs: open sync_tool on each (tray icon or Start menu) → "+ إضافة جهاز" →
+confirm the same 6-digit code on both. Everything sync_tool does is listed in its window.
