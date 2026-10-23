@@ -24,6 +24,7 @@ New-Item -ItemType Directory -Force -Path $dir | Out-Null
 Expand-Archive -Path $zip -DestinationPath $dir -Force
 Remove-Item $zip -Force
 
-Start-Process (Join-Path $dir 'sync_tool.exe')
+# Start it through Explorer so it doesn't belong to this PowerShell window in any way.
+Start-Process explorer.exe -ArgumentList "`"$(Join-Path $dir 'sync_tool.exe')`""
 Write-Host "sync_tool: installed in $dir and running (icon next to the clock)."
 Write-Host 'If Windows Firewall asks, allow it on private networks.'
